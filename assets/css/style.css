@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content:center;
+}
+/*
+.flex-container {
+  display: flex;
+  justify-content:center;
+} */
+
+BODY {
+  background-image: url("../images/wallpaper.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:black;
+}
+
+.crystal {
+  margin-top:100px;
+  width:20%;
+  align-items:center;
+}
+
+#crystal2, #crystal3 {
+  margin-left:7%;
+}
+#crystal4 {
+  margin-bottom:0px;
+}
