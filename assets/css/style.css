@@ -1,29 +1,39 @@
+@media screen and (max-width: 1440px) {
+}
+
 header {
   display: flex;
   justify-content:center;
 }
-/*
-.flex-container {
-  display: flex;
-  justify-content:center;
-} */
 
 BODY {
   background-image: url("../images/wallpaper.jpg");
   background-repeat:no-repeat;
   background-size:cover;
-  background-color:black;
+  background-color:#F5E8C8;
+}
+
+P {
+  display: inline;
 }
 
 .crystal {
-  margin-top:100px;
-  width:20%;
-  align-items:center;
+  margin: 50px 3.5% 0px 3.5%;
+  width:15%;
 }
 
-#crystal2, #crystal3 {
-  margin-left:7%;
+.crystal:hover {
+  opacity: 0.6;
 }
-#crystal4 {
-  margin-bottom:0px;
+
+.container {
+  display:block;
+  justify-content: center;
+  margin-left:10%;
+}
+
+#GoalContainer, #ScoreContainer, #WinsContainer, #LossContainer {
+  font-size:48px;
+  text-align:right;
+  margin-right:47%;
 }

@@ -2,17 +2,29 @@
 <HTML>
   <HEAD>
     <TITLE>Crystal Collector</TITLE>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/css/style.css">
   </HEAD>
   <HEADER>
-    <div class="flex-container">
-      <img src="assets/images/TITLE.png" height="94px">
-    </div>
+      <img src="assets/images/TITLE.png">
   </HEADER>
   <BODY>
-    <img class="crystal" id="crystal1" src="assets/images/CRYSTAL-1.png" align="left" height="545px" width="265px">
-    <img class="crystal" id="crystal2" src="assets/images/CRYSTAL-2.png" align="middle" height="545px" width="265px">
-    <img class="crystal" id="crystal3" src="assets/images/CRYSTAL-3.png" align="middle" height="545px" width="265px">
-    <img class="crystal" id="crystal4" src="assets/images/CRYSTAL-4.png" align="right" height="545px" width="265px">
+    <div class="container">
+      <img id="crystal-1" onclick="getElementById('crystal1').play()" class="crystal" src="assets/images/CRYSTAL-1.png" value="0">
+      <img id="crystal-2" onclick="getElementById('crystal2').play()" class="crystal" src="assets/images/CRYSTAL-2.png" value="0">
+      <img id="crystal-3" onclick="getElementById('crystal3').play()" class="crystal" src="assets/images/CRYSTAL-3.png" value="0">
+      <img id="crystal-4" onclick="getElementById('crystal4').play()" class="crystal" src="assets/images/CRYSTAL-4.png" value="0">
+    </div>
+    <audio id="crystal1" src="./assets/sounds/CRYSTAL-1.mp3"></audio>
+    <audio id="crystal2" src="./assets/sounds/CRYSTAL-2.mp3"></audio>
+    <audio id="crystal3" src="./assets/sounds/CRYSTAL-3.mp3"></audio>
+    <audio id="crystal4" src="./assets/sounds/CRYSTAL-4.mp3"></audio>
+    <div id="GoalContainer">Goal: <p id="goal">0</p></div>
+    <div id="ScoreContainer">Current Score: <p id="score">0</p></div>
+    <br>
+    <div id="WinsContainer">Total Wins: <p id="wins">0</p></div>
+    <div id="LossContainer">Total Losses: <p id="losses">0</p></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
   </BODY>
 </HTML>
